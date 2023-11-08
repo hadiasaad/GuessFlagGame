@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<body style="background-color: pink;">
+<link rel="stylesheet" href="./project.css" />
+<div id="instructions" class="align-center-v margin-5px column flex-item">
+<h1 class="align-center-v margin-5px column flex-item">Guess The Country</h1>
+<p class="align-center-v column flex-item" style="font-size: 20px;">
+    The rules are simple, there will be some flags of multiple countries shown and all you have to do is choose one of the countries from the three options given below the flag.
+</p>
+<button id="startButton" onclick="startGame()" class="zoom-in-zoom-out">Start</button>
+</div>
+<div id="questions">
+<div id="firstQuestion" class="questionBox">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP9oXZVVcaw_aTKsWQo4cmfZdZS2Jxy3rp1gLcXDkwQmtY-ZwHwaGZFn55eKSHkBw4knA&usqp=CAU" width="400px" height="300px" />
+    <button id="correct" onclick="showCorrectAnswer()">Russia</button>
+    <button id="wrong" onclick="showCorrectAnswer()">France</button>
+    <button id="wrong2" onclick="showCorrectAnswer()">Netherlands</button>
+    <button id="nextButton" onclick="removeQuestion1()">Next</button>
+</div>
+<div id="secondQuestion" class="questionBox">
+    <img src="https://media.istockphoto.com/photos/close-up-of-italys-flag-picture-id511092491?k=20&m=511092491&s=170667a&w=0&h=BCVIKJ5gAEDwCG0iZaHwAKF_TsMQREsxXCtDE6t3iEI=" width="400px" height="300px" />
+    <button id="wrong3" onclick="showCorrectAnswer2()">Ireland</button>
+    <button id="correct2" onclick="showCorrectAnswer2()">Italy</button>
+    <button id="wrong4" onclick="showCorrectAnswer2()">Mexico</button>
+    <button id="nextButton2" onclick="removeQuestion2()">Next</button>
+</div>
+<div id="thirdQuestion" class="questionBox">
+    <img src="https://m.media-amazon.com/images/I/41JINRlOkpL._SX466_.jpg" width="400px" height="300px" />
+    <button id="wrong5" onclick="showCorrectAnswer3()">Pakistan</button>
+    <button id="correct3" onclick="showCorrectAnswer3()">India </button>
+    <button id="wrong6" onclick="showCorrectAnswer3()">Ireland</button>
+    <button id="nextButton3" onclick="removeQuestion3()">Next</button>
+</div>
+<div id="fourthQuestion" class="questionBox">
+    <img src="https://media.istockphoto.com/photos/china-flag-symbol-of-chinese-power-picture-id961226308?k=20&m=961226308&s=612x612&w=0&h=6zkUI-QDPaUvGBDgCX18ZV49afgp6s7LzfS2xIW7PpM=" width="400px" height="300px" />
+    <button id="correct4" onclick="showCorrectAnswer4()">China</button>
+    <button id="wrong7" onclick="showCorrectAnswer4()">Japan</button>
+    <button id="wrong8" onclick="showCorrectAnswer4()">Turkey</button>
+    <button id="nextButton4" onclick="removeQuestion4()">Next</button>
+</div>
+<div id="fifthQuestion" class="questionBox">
+    <img src="https://media.istockphoto.com/photos/norway-flag-waving-flag-of-norway-3d-illustration-oslo-picture-id1095932558?b=1&k=20&m=1095932558&s=170667a&w=0&h=Fa7l__PEfMmqcSCATkjB0AjkZMuthly3PPacgzEs2WI=" width="400px" height="300px" />
+    <button id="wrong9" onclick="showCorrectAnswer5()">Thailand</button>
+    <button id="wrong10" onclick="showCorrectAnswer5()">Sweden</button>
+    <button id="correct5" onclick="showCorrectAnswer5()">Norway</button>
+    <button id="nextButton5" onclick="removeQuestion5()">Next</button>
+</div>
+<div id="sixthQuestion" class="questionBox">
+    <img src="https://media.istockphoto.com/photos/flag-of-poland-blowing-in-the-wind-picture-id1218009981?k=20&m=1218009981&s=612x612&w=0&h=GFYyrx8W11VlKkrOrFeiJCLlnWN7E5_lu5A0GJ6W3Oc=" width="400px" height="300px" />
+    <button id="correct6" onclick="showCorrectAnswer6()">Poland</button>
+    <button id="wrong11" onclick="showCorrectAnswer6()">Chile</button>
+    <button id="wrong12" onclick="showCorrectAnswer6()">Indonesia</button>
+    <button id="nextButton6" onclick="removeQuestion6()">Next</button>
+</div>
+<div id="seventhQuestion" class="questionBox">
+    <img src="https://media.istockphoto.com/photos/flag-of-denmark-waving-background-picture-id936903200?k=20&m=936903200&s=170667a&w=0&h=_Iw3pa79I82m1uEokoeHDZ7-js9STG6VG5f1EmfPfxY=" width="400px" height="300px" />
+    <button id="wrong13" onclick="showCorrectAnswer7()">Sweden</button>
+    <button id="wrong14" onclick="showCorrectAnswer7()">Finland</button>
+    <button id="correct7" onclick="showCorrectAnswer7()">Denmark</button>
+    <button id="nextButton7" onclick="removeQuestion7()">Next</button>
+</div>
+<div id="eigthQuestion" class="questionBox">
+    <img src="https://t3.ftcdn.net/jpg/03/47/54/84/360_F_347548443_HYyk9dgqXtDPQKiefuA87kz8HvTfkxEr.jpg" width="400px" height="300px" />
+    <button id="wrong15" onclick="showCorrectAnswer8()">Iraq</button>
+    <button id="correct8" onclick="showCorrectAnswer8()">United Arab Emirates</button>
+    <button id="wrong16" onclick="showCorrectAnswer8()">Egypt</button>
+    <button id="nextButton8" onclick="removeQuestion8()">Next</button>
+</div>
+<div id="ninthQuestion" class="questionBox">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/800px-Flag_of_Belgium.svg.png" width="400px" height="300px" />
+    <button id="wrong17" onclick="showCorrectAnswer9()">Germany</button>
+    <button id="correct9" onclick="showCorrectAnswer9()">Belgium</button>
+    <button id="wrong18" onclick="showCorrectAnswer9()">Romania</button>
+    <button id="nextButton9" onclick="removeQuestion9()">Next</button>
+</div>
+<div id="tenthQuestion" class="questionBox">
+    <img src="https://thumbs.dreamstime.com/b/national-flag-republic-peru-lima-flag-republic-peru-lima-125658934.jpg" width="400px" height="300px" />
+    <button id="correct10" onclick="showCorrectAnswer10()">Peru</button>
+    <button id="wrong19" onclick="showCorrectAnswer10()">Mexico</button>
+    <button id="wrong20" onclick="showCorrectAnswer10()">Argentina</button>
+</div>
+</div>
+<script src="./project.js"></script>
+</body>
+</html>
